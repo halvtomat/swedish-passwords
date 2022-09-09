@@ -39,8 +39,8 @@ def main():
 					print_word(key, found)
 				if '-not_found' in sys.argv and not found:
 					print_word(key, False)
-				print(found_word, "/", total_passwords, " includes words", sep='')
-				print(found_word/total_passwords*100, "%", sep='')
+			print(found_word, "/", total_passwords, " includes words", sep='')
+			print(found_word/total_passwords*100, "%", sep='')
 		elif '-count' in sys.argv:
 			counts = {}
 			for key in file2.read().splitlines():
@@ -63,8 +63,8 @@ def main():
 					print_words(key, words)
 				if '-found' in sys.argv and len(words) > 0:
 					print_words(key, words)
-				print(found_word, "/", total_passwords, " includes words", sep='')
-				print(found_word/total_passwords*100, "%", sep='')
+			print(found_word, "/", total_passwords, " includes words", sep='')
+			print(found_word/total_passwords*100, "%", sep='')
 
 
 if __name__ == "__main__":
